@@ -1,4 +1,4 @@
-FROM dockerlinz/android-sdk:27
+FROM blanthe/andrond-29:1.0
 
 ENV FLUTTER_HOME=${HOME}/sdks/flutter \
     FLUTTER_ROOT=$FLUTTER_HOME \
