@@ -10,5 +10,5 @@ RUN mkdir -p ${FLUTTER_HOME}
 
 ENV PATH ${PATH}:${FLUTTER_HOME}/bin:${FLUTTER_HOME}/bin/cache/dart-sdk/bin
 
-RUN git clone --branch ${FLUTTER_VERSION} https://github.com/flutter/flutter.git ${FLUTTER_HOME} && \
+RUN git clone -b stable https://github.com/flutter/flutter.git ${FLUTTER_HOME} && \
     flutter doctor
